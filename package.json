@@ -1,7 +1,18 @@
 {
-  "name": "wjh-components",
-  "private": true,
-  "version": "0.0.0",
+  "name": "zhang-components",
+  "private": false,
+  "version": "1.0.1",
+  "main": "lib/wjh-element-component.umd.js",
+  "module": "lib/wjh-element-component.es.js",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/wjh-element-component.es.js",
+      "require": "./lib/wjh-element-component.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
